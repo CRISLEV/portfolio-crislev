@@ -16,7 +16,7 @@ export const projects = [
     evolution: 'Service separation, Kafka messaging, Kubernetes, CI/CD, and high availability.'
   },
   {
-    number: '03', title: 'taff Meal & Operations Platform', category: 'Association · Meal Management · Full-Stack',
+    number: '03', title: 'Staff Meal & Operations Platform', category: 'Association · Meal Management · Full-Stack',
     description: 'A working web application built for an association in Guatemala to manage staff meals and the related day-to-day operations. It brings menus, food records, kitchen workflows, staff, guests, reports, and access control into one administrative platform.',
     contribution: [
       'Built the modular Next.js interface for meal administration, kitchen workflows, staff, and reporting',
