@@ -8,7 +8,7 @@ export const site = {
   linkedin: 'https://www.linkedin.com/in/crislev/',
   github: 'https://github.com/CRISLEV',
   email: 'clevi.gonzalez@gmail.com',
-  resume: '/Christian_Gonzalez_Tech_Lead_Solution_Architect_Resume.docx',
+  resume: '/Christian_Gonzalez_Tech_Lead_Solution_Architect_Resume.pdf',
   banner: '/banner.png',
   profile: '/avatar.jpg',
   logo: '/Logo.png',
