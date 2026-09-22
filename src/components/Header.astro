@@ -1,0 +1,30 @@
+---
+import { Menu, X, Download } from '@lucide/astro';
+import BrandIcon from './BrandIcon.astro';
+import { site } from '../config/site';
+const links = ['About', 'Experience', 'Projects', 'Architecture', 'Skills', 'Credentials', 'Leadership', 'Contact'];
+---
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="Christian Gonzalez, back to top"><img class="brand-logo" src={site.logo} alt="Christian Gonzalez" width="48" height="48" /></a>
+    <div class="desktop-links">{links.map(link => <a href={`#${link.toLowerCase()}`}>{link}</a>)}</div>
+    <div class="nav-actions">
+      <a class="icon-link" href={site.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><BrandIcon name="linkedin" size={18}/></a>
+      <a class="icon-link" href={site.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><BrandIcon name="github" size={18}/></a>
+      <a class="button button-small nav-resume" href={site.resume} download><Download size={15}/> Resume</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><Menu class="menu-open-icon" size={23}/><X class="menu-close-icon" size={23}/></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    {links.map(link => <a href={`#${link.toLowerCase()}`}>{link}</a>)}
+    <div class="mobile-social"><a href={site.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a><a href={site.github} target="_blank" rel="noopener noreferrer">GitHub</a><a href={site.resume} download>Download Resume</a></div>
+  </div>
+</header>
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+  const menu = document.querySelector<HTMLElement>('#mobile-menu');
+  function closeMenu() { if (!toggle || !menu) return; toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Open menu'); menu.hidden = true; }
+  toggle?.addEventListener('click', () => { if (!menu) return; const open = toggle.getAttribute('aria-expanded') !== 'true'; toggle.setAttribute('aria-expanded', String(open)); toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); menu.hidden = !open; });
+  menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
+</script>
