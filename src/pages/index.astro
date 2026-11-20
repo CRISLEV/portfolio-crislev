@@ -61,100 +61,124 @@ const principles = [
 ---
 
 <BaseLayout>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">
+    Skip to content
+  </a>
   <div id="top" aria-hidden="true"></div>
   <Header />
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-grid container">
         <div class="hero-copy">
-          <h1 id="hero-title">Christian<br /><span>Gonzalez.</span></h1>
+          <h1 id="hero-title">
+            Christian
+            <br />
+            <span>Gonzalez</span>
+          </h1>
           <div class="hero-roles">
-            <span>Fullstack Developer</span><span>Technical Lead</span><span
-              >Cloud & DevOps</span
-            >
+            <span>Fullstack Developer</span>
+            <span>Technical Lead</span>
+            <span>Cloud & DevOps</span>
           </div>
           <p class="hero-lead">
-            I design reliable software solutions, lead technical teams, and
-            bridge software, infrastructure, cloud and business requirements.
+            Hi! I'm a Fullstack Developer with over 10 years of professional
+            experience across software development.
           </p>
           <p class="hero-support">
-            Systems Engineer with 9+ years of software engineering experience
-            and 2+ years leading technical teams, focused on telecom platforms,
-            solution architecture, automation and production reliability.
+            This is a summary of my work, experience and skills, to show how I
+            can contribute to your team and projects.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#experience"
-              >View Experience <ArrowRight size={17} /></a
-            ><a class="button button-outline" href={site.resume} download
-              ><Download size={17} /> Download Resume</a
-            ><a
+            <a class="button button-primary" href="#experience">
+              View Experience <ArrowRight size={17} />
+            </a>
+            <a class="button button-outline" href={site.resume} download>
+              <Download size={17} /> Download Resume
+            </a>
+            <a
               class="text-link"
               href={site.linkedin}
               target="_blank"
-              rel="noopener noreferrer">LinkedIn <ArrowUpRight size={16} /></a
+              rel="noopener noreferrer"
             >
+              LinkedIn <ArrowUpRight size={16} />
+            </a>
           </div>
         </div>
         <div
           class="hero-visual"
-          aria-label={hasProfile
-            ? "Professional portrait of Christian Gonzalez"
-            : "Architectural portrait placeholder"}
+          aria-label={
+            hasProfile
+              ? "Professional portrait of Christian Gonzalez"
+              : "Architectural portrait placeholder"
+          }
         >
           <div class="visual-lines" aria-hidden="true">
-            <span></span><span></span><span></span><span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
           <div class="portrait-frame">
-            {
-              hasProfile ? (
-                <img
-                  src={site.profile}
-                  alt="Christian Gonzalez"
-                  width="540"
-                  height="640"
-                  fetchpriority="high"
-                />
-              ) : (
-                <div class="portrait-placeholder" aria-hidden="true">
-                  <>
-                    <div class="placeholder-grid" />
-                    <img
-                      class="placeholder-logo"
-                      src={site.logo}
-                      alt=""
-                      width="180"
-                      height="180"
-                    />
-                    <p>
-                      DESIGN <span>·</span> LEAD <span>·</span> BUILD
-                    </p>
-                  </>
-                </div>
-              )
-            }
+            {hasProfile ? (
+              <img
+                src={site.profile}
+                alt="Christian Gonzalez"
+                width="540"
+                height="640"
+                fetchpriority="high"
+              />
+            ) : (
+              <div class="portrait-placeholder" aria-hidden="true">
+                <>
+                  <div class="placeholder-grid" />
+                  <img
+                    class="placeholder-logo"
+                    src={site.logo}
+                    alt=""
+                    width="180"
+                    height="180"
+                  />
+                  <p>
+                    DESIGN <span>·</span> LEAD <span>·</span> BUILD
+                  </p>
+                </>
+              </div>
+            )}
           </div>
           <div class="visual-label">
-            <span class="status-dot"></span> BASED IN GUATEMALA <span> - </span> OPEN
-            TO REMOTE
+            <span class="status-dot"></span> BASED IN GUATEMALA <span> - </span>{" "}
+            OPEN TO REMOTE
           </div>
         </div>
       </div>
       <div class="metrics container" aria-label="Career at a glance">
         <div>
-          <strong>10<span>+</span></strong><span>Years Experience</span>
-        </div><div>
-          <strong>5<span>+</span></strong><span
-            >Years Full-Stack Engineering Background</span
-          >
-        </div><div>
-          <strong>2<span>+</span></strong><span>Years Technical Leadership</span
-          >
-        </div><div><strong>2</strong><span>Telecom Platforms Led</span></div>
+          <strong>
+            10<span>+</span>
+          </strong>
+          <span>Years Experience</span>
+        </div>
+        <div>
+          <strong>
+            8<span>+</span>
+          </strong>
+          <span>Years Full-Stack Engineering Background</span>
+        </div>
+        <div>
+          <strong>
+            2<span>+</span>
+          </strong>
+          <span>Years Technical Leadership</span>
+        </div>
+        <div>
+          <strong>6</strong>
+          <span>Credentials</span>
+        </div>
       </div>
-      <a class="scroll-cue" href="#about" aria-label="Scroll to about section"
-        ><ArrowDown size={17} /> SCROLL TO EXPLORE</a
-      >
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+        <ArrowDown size={17} /> SCROLL TO EXPLORE
+      </a>
     </section>
 
     <section
@@ -164,35 +188,41 @@ const principles = [
     >
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">01 / ABOUT</p><h2 id="about-title">
-            From Software Engineering<br />to <em>Solution Architecture.</em>
+          <p class="section-kicker">01 / ABOUT</p>
+          <h2 id="about-title">
+            My
+            <br />
+            <em>Background </em>
           </h2>
-        </div><div class="about-grid">
+        </div>
+        <div class="about-grid">
           <div class="about-intro">
             <p>
-              My career began in hands-on development backend and frontend, and
-              grew into technical leadership and solution architecture. I work
-              across the complete solution: application code, infrastructure,
-              databases, deployments, monitoring and the requirements behind
-              them.
-            </p><p>
-              I work with teams to find practical solutions, deliver reliable
-              systems, and stay involved in the technical work.
-            </p><a class="inline-link" href="#contact"
-              >Let's connect <ArrowUpRight size={17} /></a
-            >
-          </div><div class="capability-grid">
-            {
-              capabilities.map(({ title, icon: Icon }, i) => (
-                <div class="capability">
-                  <>
-                    <span class="capability-number">0{i + 1}</span>
-                    <Icon size={25} stroke-width={1.5} />
-                    <h3>{title}</h3>
-                  </>
-                </div>
-              ))
-            }
+              I have over 10 years of experience building fullstack web
+              applications, REST APIs, and automation solutions, with hands-on
+              experience in DevOps, cloud infrastructure, CI/CD pipelines,
+              containerization, automated testing, and code quality.
+            </p>
+            <p>
+              As a technical leader, I work closely with my team and
+              stakeholders to translate business requirements into fullstack
+              solutions, while staying involved in development and continuously
+              exploring new technologies.
+            </p>
+            <a class="inline-link" href="#contact">
+              Let's connect <ArrowUpRight size={17} />
+            </a>
+          </div>
+          <div class="capability-grid">
+            {capabilities.map(({ title, icon: Icon }, i) => (
+              <div class="capability">
+                <>
+                  <span class="capability-number">0{i + 1}</span>
+                  <Icon size={25} stroke-width={1.5} />
+                  <h3>{title}</h3>
+                </>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -205,46 +235,46 @@ const principles = [
     >
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">02 / EXPERIENCE</p><h2
-            id="experience-title"
-          >
-            Where I've<br /><em>Built & Led.</em>
-          </h2><p>
-            From software development and testing to technical leadership across
-            a range of projects.
-          </p>
-        </div><div class="timeline">
-          {
-            experience.map((job) => (
-              <article class="timeline-item">
-                <>
-                  <div class="timeline-date">
-                    <span>{job.dates}</span>
-                    {"current" in job && job.current && (
-                      <span class="current-pill">CURRENT</span>
-                    )}
-                  </div>
-                  <div class="timeline-content">
-                    <p class="job-summary">{job.summary}</p>
-                    {job.highlights.length > 0 && (
-                      <ul class="job-highlights">
-                        {job.highlights.map((item) => (
-                          <li>{item}</li>
-                        ))}
-                      </ul>
-                    )}
-                    {job.stack.length > 0 && (
-                      <div class="tag-list">
-                        {job.stack.map((item) => (
-                          <span>{item}</span>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </>
-              </article>
-            ))
-          }
+          <p class="section-kicker">02 / EXPERIENCE</p>
+          <h2 id="experience-title">
+            My work
+            <br />
+            <em>over the years</em>
+          </h2>
+        </div>
+        <div class="timeline">
+          {experience.map((job) => (
+            <article class="timeline-item">
+              <>
+                <div class="timeline-date">
+                  <b>
+                    {job.role} at {job.company}
+                  </b>
+                  <span>{job.dates}</span>
+                  {"current" in job && job.current && (
+                    <span class="current-pill">CURRENT</span>
+                  )}
+                </div>
+                <div class="timeline-content">
+                  <p class="job-summary">{job.summary}</p>
+                  {job.highlights.length > 0 && (
+                    <ul class="job-highlights">
+                      {job.highlights.map((item) => (
+                        <li>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {job.stack.length > 0 && (
+                    <div class="tag-list">
+                      {job.stack.map((item) => (
+                        <span>{item}</span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </>
+            </article>
+          ))}
         </div>
       </div>
     </section>
@@ -257,72 +287,73 @@ const principles = [
       <div class="container">
         <div class="section-heading section-heading-split">
           <div>
-            <p class="section-kicker">03 / PROJECTS</p><h2 id="projects-title">
-              Platforms built for<br /><em>real operations.</em>
+            <p class="section-kicker">03 / PROJECTS</p>
+            <h2 id="projects-title">
+              Key
+              <br />
+              <em>Projects</em>
             </h2>
           </div>
         </div>
         <div class="projects-list">
-          {
-            projects.map((project) => (
-              <article class="project-card">
-                <div class="project-heading">
-                  <div>
-                    <span class="project-number">
-                      PROJECT {project.number} <span class="mini-line" />
-                    </span>
-                    <h3>{project.title}</h3>
-                    <p class="project-category">{project.category}</p>
-                  </div>
-                  <div class="project-symbol" aria-hidden="true">
-                    {project.number === "03" ? (
-                      <Workflow size={43} stroke-width={1} />
-                    ) : (
-                      <Network size={43} stroke-width={1} />
-                    )}
-                  </div>
+          {projects.map((project) => (
+            <article class="project-card">
+              <div class="project-heading">
+                <div>
+                  <span class="project-number">
+                    PROJECT {project.number} <span class="mini-line" />
+                  </span>
+                  <h3>{project.title}</h3>
+                  <p class="project-category">{project.category}</p>
                 </div>
-                <p class="project-description">{project.description}</p>
-                {"url" in project && project.url && (
-                  <a
-                    class="project-link"
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Open ${project.title} application in a new tab`}
-                  >
-                    Open application <ArrowUpRight size={17} />
-                  </a>
-                )}
-                <div class="project-details">
-                  <div>
-                    <>
-                      <h4>MY CONTRIBUTION</h4>
-                      <ul>
-                        {project.contribution.map((item) => (
-                          <li>{item}</li>
-                        ))}
-                      </ul>
-                    </>
-                  </div>
-                  <div>
-                    <>
-                      <h4>TECHNOLOGIES USED</h4>
-                      <div class="tag-list">
-                        {project.technologies.map((item) => (
-                          <span>{item}</span>
-                        ))}
-                      </div>
-                    </>
-                  </div>
+                <div class="project-symbol" aria-hidden="true">
+                  {project.number === "03" ? (
+                    <Workflow size={43} stroke-width={1} />
+                  ) : (
+                    <Network size={43} stroke-width={1} />
+                  )}
                 </div>
-                <div class="project-considerations">
-                  <p>{project.architecture}</p>
-                  {project.evolution && <p />}
+              </div>
+              <p class="project-description">{project.description}</p>
+              {"url" in project && project.url && (
+                <a
+                  class="project-link"
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${project.title} application in a new tab`}
+                >
+                  Open application <ArrowUpRight size={17} />
+                </a>
+              )}
+              <div class="project-details">
+                <div>
+                  <>
+                    <h4>MY CONTRIBUTION</h4>
+                    <ul>
+                      {project.contribution.map((item) => (
+                        <li>{item}</li>
+                      ))}
+                    </ul>
+                  </>
                 </div>
-              </article>
-            ))
-          }
+                <div>
+                  <>
+                    <h4>TECHNOLOGIES USED</h4>
+                    <div class="tag-list">
+                      {project.technologies.map((item) => (
+                        <span>{item}</span>
+                      ))}
+                    </div>
+                  </>
+                </div>
+              </div>
+              {/* <div class="project-considerations">
+                <p>{project.architecture}</p>
+                {project.evolution && <p />}
+              </div> */}
+            </article>
+          ))}
         </div>
       </div>
     </section>
@@ -366,27 +397,31 @@ const principles = [
     >
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">04 / SKILLS</p><h2 id="skills-title">
-            Built across<br /><em>disciplines.</em>
-          </h2><p>
-            Technologies and practices I've worked with across engineering,
-            infrastructure and architecture.
+          <p class="section-kicker">04 / SKILLS</p>
+          <h2 id="skills-title">
+            Technical
+            <br />
+            <em>Skills</em>
+          </h2>
+          <p>
+            My preferred stack combines React (Next.js) on the frontend with
+            Node.js (NestJS) on the backend, with MongoDB or PostgreSQL and
+            cloud technologies.
           </p>
-        </div><div class="skills-grid">
-          {
-            skills.map((group) => (
-              <div class="skill-group">
-                <>
-                  <h3>{group.category}</h3>
-                  <div class="tag-list">
-                    {group.items.map((item) => (
-                      <span>{item}</span>
-                    ))}
-                  </div>
-                </>
-              </div>
-            ))
-          }
+        </div>
+        <div class="skills-grid">
+          {skills.map((group) => (
+            <div class="skill-group">
+              <>
+                <h3>{group.category}</h3>
+                <div class="tag-list">
+                  {group.items.map((item) => (
+                    <span>{item}</span>
+                  ))}
+                </div>
+              </>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -398,37 +433,37 @@ const principles = [
     >
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">05 / CREDENTIALS</p><h2
-            id="credentials-title"
-          >
-            Credentials that support<br /><em>the work.</em>
+          <p class="section-kicker">05 / CREDENTIALS</p>
+          <h2 id="credentials-title">
+            Credentials that support
+            <br />
+            <em>my work.</em>
           </h2>
-        </div><div class="credentials-grid">
-          {
-            credentials.map((credential) => (
-              <article class="credential">
-                <>
-                  <div>
-                    <>
-                      <span class="credential-type">
-                        {credential.type} <span aria-hidden="true">/</span>{" "}
-                        {credential.issuer}
-                      </span>
-                      <h3>{credential.title}</h3>
-                    </>
-                  </div>
-                  <a
-                    href={credential.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`View ${credential.title} credential (opens in a new tab)`}
-                  >
-                    View credential <ArrowUpRight size={16} />
-                  </a>
-                </>
-              </article>
-            ))
-          }
+        </div>
+        <div class="credentials-grid">
+          {credentials.map((credential) => (
+            <article class="credential">
+              <>
+                <div>
+                  <>
+                    <span class="credential-type">
+                      {credential.type} <span aria-hidden="true">/</span>{" "}
+                      {credential.issuer}
+                    </span>
+                    <h3>{credential.title}</h3>
+                  </>
+                </div>
+                <a
+                  href={credential.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View ${credential.title} credential (opens in a new tab)`}
+                >
+                  View credential <ArrowUpRight size={16} />
+                </a>
+              </>
+            </article>
+          ))}
         </div>
       </div>
     </section>
@@ -475,17 +510,26 @@ const principles = [
     >
       <div class="container education-grid">
         <div>
-          <GraduationCap size={27} stroke-width={1.5} /><p
-            class="section-kicker"
-          >
-            EDUCATION
-          </p><h2>Bachelor of Science and<br />Systems Engineering</h2><p>
+          <GraduationCap size={27} stroke-width={1.5} />
+          <p class="section-kicker">EDUCATION</p>
+          <h2>
+            Bachelor of Science and
+            <br />
+            Systems Engineering
+          </h2>
+          <p>
             University of San Carlos of Guatemala <span>·</span> Completed 2023
           </p>
-        </div><div>
-          <Languages size={27} stroke-width={1.5} /><p class="section-kicker">
-            LANGUAGES
-          </p><h2>Clear communication<br />across teams.</h2><p>
+        </div>
+        <div>
+          <Languages size={27} stroke-width={1.5} />
+          <p class="section-kicker">LANGUAGES</p>
+          <h2>
+            Clear communication
+            <br />
+            across teams.
+          </h2>
+          <p>
             Spanish Native <span>·</span> English B2 / Upper Intermediate
           </p>
         </div>
@@ -498,26 +542,33 @@ const principles = [
       aria-labelledby="contact-title"
     >
       <div class="container contact-inner">
-        <p class="section-kicker">08 / CONTACT</p><h2 id="contact-title">
-          Let's build<br /><em>reliable solutions.</em>
-        </h2><p>
-          I'm open to remote opportunities as a Fullstack Developer, Technical
-          Lead, Cloud, DevOps and Software Engineering.
-        </p><div class="contact-actions">
-          <a class="button button-primary" href={`mailto:${site.email}`}
-            ><Mail size={18} /> Email Me</a
-          ><a
+        <p class="section-kicker">08 / CONTACT</p>
+        <h2 id="contact-title">
+          Get in <em>touch</em>
+        </h2>
+        <p>
+          I'm open to hear about remote opportunities as a Fullstack Developer
+          or Technical Lead.
+        </p>
+        <div class="contact-actions">
+          <a class="button button-primary" href={`mailto:${site.email}`}>
+            <Mail size={18} /> Email Me
+          </a>
+          <a
             class="button button-outline"
             href={site.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            ><BrandIcon name="linkedin" size={18} /> LinkedIn</a
-          ><a class="text-link" href={site.resume} download
-            ><Download size={17} /> Download Resume</a
           >
-        </div><a class="contact-email" href={`mailto:${site.email}`}
-          >{site.email}</a
-        >
+            <BrandIcon name="linkedin" size={18} /> LinkedIn
+          </a>
+          <a class="text-link" href={site.resume} download>
+            <Download size={17} /> Download Resume
+          </a>
+        </div>
+        <a class="contact-email" href={`mailto:${site.email}`}>
+          {site.email}
+        </a>
       </div>
     </section>
   </main>
@@ -527,28 +578,39 @@ const principles = [
         class="brand footer-brand"
         href="#top"
         aria-label="Christian Gonzalez, back to top"
-        ><img
+      >
+        <img
           src={site.logoFull}
           alt="Christian Gonzalez"
           width="120"
           height="80"
           loading="lazy"
-        /></a
-      ><p>
-        © {new Date().getFullYear()} Christian Levi Gonzalez Rodriguez - Technical
-        Lead / Solution Architect
-      </p><div>
+        />
+      </a>
+      <p>
+        © {new Date().getFullYear()} Christian Levi Gonzalez Rodriguez -
+        FULLSTACK DEVELOPER | TECHNICAL LEAD | CLOUD & DEVOPS
+      </p>
+      <div>
         <a
           href={site.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="LinkedIn"><BrandIcon name="linkedin" size={17} /></a
-        ><a
+          aria-label="LinkedIn"
+        >
+          <BrandIcon name="linkedin" size={17} />
+        </a>
+        <a
           href={site.github}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="GitHub"><BrandIcon name="github" size={17} /></a
-        ><a href="#top" aria-label="Back to top">↑</a>
+          aria-label="GitHub"
+        >
+          <BrandIcon name="github" size={17} />
+        </a>
+        <a href="#top" aria-label="Back to top">
+          ↑
+        </a>
       </div>
     </div>
   </footer>
